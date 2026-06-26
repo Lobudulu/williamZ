@@ -4,9 +4,14 @@ def animal(moose,pig):
             print(pig,"won")
             return True    
 def camel(donkey,cow):
-    for g in range(4):
+    for g in range(3):
         if board[g][donkey]==cow and board[g+1][donkey]==cow and board[g+2][donkey]==cow and board[g+3][donkey]==cow:
             print(cow,"won")
+            return True
+def tgghbhhhgvffggg(a,r,b):
+    for r in range(3):
+        if board[r-1][a-1]==b and board[r-2][a-2]==b and [r-3][a-3] and board [r-4][a-4]==b:
+            print(b,"won")
             return True
 print("rules:")
 print("if you choose to put your tile in a filled column then your turn gets skipped")
@@ -56,6 +61,10 @@ while True:
     for i in range(7):
         if camel(i,"🟡")==True:
             break
+    for i in range(3):
+        for g in range(3):
+            if tgghbhhhgvffggg(i,g,"🟡")==True:
+                break
     x=int(input("enter column number (1,2,3,4,5,6,or 0)"))
     if x!=1 and x!=2 and x!=3 and x!=4 and x!=0 and x!=5 and x!=6:
         x=int(input("enter column number (1,2,3,4,5,6,or 0)"))
@@ -89,3 +98,8 @@ while True:
             break
     for i in range(7):
         camel(i,"🔴")
+        break
+    for i in range(3):
+        for g in range(3):
+            if tgghbhhhgvffggg(i,g,"🔴")==True:
+                break
