@@ -1,0 +1,2 @@
+while True:
+    print("kdhgs4yn8n3guvywuoirhjfdhfdjhwueiytuyr78vnbr8nyw78ntudtrhjghsiufhj iudfhvgtny87tvnyvynubvbinbvurbckxd bvsftgd7byrnmiu hnmbmnbvmnbvenmnmnmbmnbmnmtdrhjgvbwn'")

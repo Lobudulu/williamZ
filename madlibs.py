@@ -1,0 +1,15 @@
+#The lion jumped over a moving firetruck. The firetruck had its loud sirens on. The firetruck crashed into a utillity pole. The utillity pole snapped in half.
+#lion jumped firetruck firetruck siren firetruck  firetruck crashed utillity pole snapped
+noun1=input("enter noun")
+verb1=input("enter verb")
+noun2=input("enter noun")
+noun3=input("enter noun")
+noun4=input("enter noun")
+noun5=input("enter noun")
+verb2=input("enter verb")
+noun6=input("enter noun")
+noun7=input("enter noun")
+verb3=input("enter verb")
+print("The",noun1,verb1,"over","a","moving",noun2,".")
+print("The",noun3,"had","its","loud",noun4,"on",".")
+print("The",noun5,verb2,"into","a",noun6,".","The",noun7,verb3,"in","half",".")

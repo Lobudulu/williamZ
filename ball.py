@@ -1,0 +1,2 @@
+print("ball")
+print("animal")
