@@ -10,8 +10,13 @@ def camel(donkey,cow):
             return True
 def tgghbhhhgvffggg(a,r,b):
     for r in range(3):
-        if board[r-1][a-1]==b and board[r-2][a-2]==b and [r-3][a-3] and board [r-4][a-4]==b:
+        if board[r-1][a-1]==b and board[r-2][a-2]==b and board[r-3][a-3]==b and board[r-4][a-4]==b:
             print(b,"won")
+            return True
+def ffjdkfjkdjfkdjfkdjfkdjfkjdkfjkdjfkdjkfjdkfkdfkfdjfdkfjkdjfkdjfkdjfkdkjfkdjfk(z,m,n):
+    for m in range(3):
+        if board[m+1][z+1]==n and board[m+2][z+2]==n and board[m+3][z+3]==n and board [r+4][z+4]==n:
+            print(n,"won")
             return True
 print("rules:")
 print("if you choose to put your tile in a filled column then your turn gets skipped")
@@ -24,7 +29,7 @@ for i in range(6):
     board.append(row)
 for row in board:
     print(row)
-s=[5,5,5,5,5,5,5]
+s=[5,5,5,5,5,5,5,5]
 while True:
     x=int(input("enter column number (1,2,3,4,5,6,or 0)"))
     if x!=1 and x!=2 and x!=3 and x!=4 and x!=0 and x!=5 and x!=6:
@@ -65,6 +70,10 @@ while True:
         for g in range(3):
             if tgghbhhhgvffggg(i,g,"🟡")==True:
                 break
+    for i in range(3):
+        for g in range(3):
+            if ffjdkfjkdjfkdjfkdjfkdjfkjdkfjkdjfkdjkfjdkfkdfkfdjfdkfjkdjfkdjfkdjfkdkjfkdjfk(i,g,"🟡")==True:
+                break
     x=int(input("enter column number (1,2,3,4,5,6,or 0)"))
     if x!=1 and x!=2 and x!=3 and x!=4 and x!=0 and x!=5 and x!=6:
         x=int(input("enter column number (1,2,3,4,5,6,or 0)"))
@@ -102,4 +111,8 @@ while True:
     for i in range(3):
         for g in range(3):
             if tgghbhhhgvffggg(i,g,"🔴")==True:
+                break
+    for i in range(3):
+        for g in range(3):
+            if ffjdkfjkdjfkdjfkdjfkdjfkjdkfjkdjfkdjkfjdkfkdfkfdjfdkfjkdjfkdjfkdjfkdkjfkdjfk(i,g,"🔴")==True:
                 break
