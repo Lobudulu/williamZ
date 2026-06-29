@@ -8,20 +8,21 @@ def camel(donkey,cow):
         if board[g][donkey]==cow and board[g+1][donkey]==cow and board[g+2][donkey]==cow and board[g+3][donkey]==cow:
             print(cow,"won")
             return True
-def tgghbhhhgvffggg(a,r,b):
+def b(a,r,b):
     for r in range(3):
         if board[r-1][a-1]==b and board[r-2][a-2]==b and board[r-3][a-3]==b and board[r-4][a-4]==b:
             print(b,"won")
             return True
-def ffjdkfjkdjfkdjfkdjfkdjfkjdkfjkdjfkdjkfjdkfkdfkfdjfdkfjkdjfkdjfkdjfkdkjfkdjfk(z,m,n):
+def a(z,m,n):
     for m in range(3):
-        if board[m+1][z+1]==n and board[m+2][z+2]==n and board[m+3][z+3]==n and board [r+4][z+4]==n:
+        if board[m-1][z+1]==n and board[m-2][z+2]==n and board[m-3][z+3]==n and board[m-4][z+4]==n:
             print(n,"won")
             return True
 print("rules:")
 print("if you choose to put your tile in a filled column then your turn gets skipped")
 print("Don't do anything bad or you will get a slap")
 board=[]
+r=True
 for i in range(6):
     row=[]
     for g in range(7):
@@ -30,7 +31,7 @@ for i in range(6):
 for row in board:
     print(row)
 s=[5,5,5,5,5,5,5,5]
-while True:
+while r==True:
     x=int(input("enter column number (1,2,3,4,5,6,or 0)"))
     if x!=1 and x!=2 and x!=3 and x!=4 and x!=0 and x!=5 and x!=6:
         x=int(input("enter column number (1,2,3,4,5,6,or 0)"))
@@ -60,20 +61,22 @@ while True:
     for row in board:
         print(row)
     for i in range(6):
-        animal(i,"🟡")
+        #animal(i,"🟡")
         if animal (i,"🟡")==True:
-            break
+            r=False
     for i in range(7):
         if camel(i,"🟡")==True:
-            break
+            r=False
+    for i in range(4):
+        for g in range(4):
+            #b(i,g,"🟡")
+            if b(i,g,"🟡")==True:
+                r=False
     for i in range(3):
         for g in range(3):
-            if tgghbhhhgvffggg(i,g,"🟡")==True:
-                break
-    for i in range(3):
-        for g in range(3):
-            if ffjdkfjkdjfkdjfkdjfkdjfkjdkfjkdjfkdjkfjdkfkdfkfdjfdkfjkdjfkdjfkdjfkdkjfkdjfk(i,g,"🟡")==True:
-                break
+            #a(i,g,"🟡")
+            if a(i,g,"🟡")==True:
+                r=False
     x=int(input("enter column number (1,2,3,4,5,6,or 0)"))
     if x!=1 and x!=2 and x!=3 and x!=4 and x!=0 and x!=5 and x!=6:
         x=int(input("enter column number (1,2,3,4,5,6,or 0)"))
@@ -102,17 +105,19 @@ while True:
     for row in board:
         print(row)
     for i in range(6):
-        animal(i,"🔴")
+        #animal(i,"🔴")
         if animal (i,"🔴")==True:
-            break
+            r=False
     for i in range(7):
-        camel(i,"🔴")
-        break
+        if camel(i,"🔴")==True:
+            r=False
+    for i in range(4):
+        for g in range(4):
+            #b(i,g,"🔴")
+            if b(i,g,"🔴")==True:
+                r=False
     for i in range(3):
         for g in range(3):
-            if tgghbhhhgvffggg(i,g,"🔴")==True:
-                break
-    for i in range(3):
-        for g in range(3):
-            if ffjdkfjkdjfkdjfkdjfkdjfkjdkfjkdjfkdjkfjdkfkdfkfdjfdkfjkdjfkdjfkdjfkdkjfkdjfk(i,g,"🔴")==True:
-                break
+            #a(i,g,"🔴")
+            if a(i,g,"🔴")==True:
+                r=False
