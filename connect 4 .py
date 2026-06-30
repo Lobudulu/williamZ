@@ -63,23 +63,17 @@ while r==True:
     for i in range(6):
         #animal(i,"🟡")
         if animal (i,"🟡")==True:
-            r=False
             break
     for i in range(7):
         if camel(i,"🟡")==True:
-            r=False
             break
-    for i in range(4):
-        for g in range(4):
-            #b(i,g,"🟡")
-            if b(i,g,"🟡")==True:
-                r=False
+    for i in range(3):
+        for g in range(3):
+            if tgghbhhhgvffggg(i,g,"🟡")==True:
                 break
     for i in range(3):
         for g in range(3):
-            #a(i,g,"🟡")
-            if a(i,g,"🟡")==True:
-                r=False
+            if ffjdkfjkdjfkdjfkdjfkdjfkjdkfjkdjfkdjkfjdkfkdfkfdjfdkfjkdjfkdjfkdjfkdkjfkdjfk(i,g,"🟡")==True:
                 break
     x=int(input("enter column number (1,2,3,4,5,6,or 0)"))
     if x!=1 and x!=2 and x!=3 and x!=4 and x!=0 and x!=5 and x!=6:
@@ -122,6 +116,9 @@ while r==True:
                 r=False
     for i in range(3):
         for g in range(3):
-            #a(i,g,"🔴")
-            if a(i,g,"🔴")==True:
-                r=False
+            if tgghbhhhgvffggg(i,g,"🔴")==True:
+                break
+    for i in range(3):
+        for g in range(3):
+            if ffjdkfjkdjfkdjfkdjfkdjfkjdkfjkdjfkdjkfjdkfkdfkfdjfdkfjkdjfkdjfkdjfkdkjfkdjfk(i,g,"🔴")==True:
+                break
