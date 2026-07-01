@@ -188,20 +188,178 @@ for i in range (10):
     for g in range(10):
         row.append("◻")
     computers_board.append(row)
-for i in range(3):
-    A=randint(0,9)
-    j=randint(0,9)
-    if A==0:
-        Q=randint(0,1)
-        if Q==0:
-            computers_board[A+1][j]=="🛳️"
-            computers_board[A+2][j]=="🛳️"
+A=randint(0,9)
+j=randint(0,9)
+computers_board[A][j]="🛳️"
+if A==0:
+    Q=randint(0,1)
+    if computers_board[0][0]=="🛳️":
+        Q=randint(0,2)
+    if Q==0:
+        computers_board[A+1][j]="🛳️"
+        computers_board[A+2][j]="🛳️"
     computers_board[A][j]="🛳️"
+    if Q==1:
+        computers_board[A][j]
+        Z=randint(0,1)
+        if Z==1:
+            computers_board[A][j+1]="🛳️"
+            computers_board[A][j+2]="🛳️"
+        if Z==0:
+            while True:
+                if j-1<0:
+                    j=randint(0,9)
+                if j-2<0:
+                    j=randint(0,9)
+                if j>1:
+                    break
+            computers_board[A][j-1]="🛳️"
+            computers_board[A][j-2]="🛳️"
+    if Q==2:
+        while True:
+                if j-1<0:
+                    j=randint(0,9)
+                if j<2:
+                    j=randint(0,9)
+                    computers_board[A][j]="🛳️"
+                    computers_board[A][j-1]="🛳️"
+                    computers_board[A][j+1]="🛳️"
+if A==9:
+    D=randint(0,1)
+    if computers_board[0][0]=="🛳️":
+        D=randint(0,2)
+    if D==0:
+        computers_board[A-1][j]="🛳️"
+        computers_board[A-2][j]="🛳️"
+    computers_board[A][j]="🛳️"
+    if D==1:
+        computers_board[A][j]
+        Z=randint(0,1)
+        if Z==1:
+            computers_board[A][j-1]="🛳️"
+            computers_board[A][j-2]="🛳️"
+        computers_board[A][j]="🛳️"
+        if Z==0:
+            while True:
+                if j<1:
+                    j=randint(0,9)
+                if j>1:
+                    break
+            computers_board[A][j-1]="🛳️"
+            computers_board[A][j-2]="🛳️"
+    if D==2:
+        while True:
+                if j-1<0:
+                    j=randint(0,9)
+                if j-2<0:
+                    j=randint(0,9)
+                    computers_board[A][j]="🛳️"
+                    computers_board[A][j-1]="🛳️"
+                    computers_board[A][j+1]="🛳️"
+
+
+M=randint(0,9)
+F=randint(0,9)
+computers_board[M][F]="🛬"
+if M==0:
+    Q=randint(0,1)
+    if computers_board[0][0]=="🛬":
+        Q=randint(0,2)
+    if Q==0:
+        computers_board[M-1][F]="🛬"
+        computers_board[M-2][F]="🛬"
+        computers_board[M-3][F]="🛬"
+        computers_board[M-4][F]="🛬"
+    computers_board[M][F]="🛬"
+    if Q==1:
+        computers_board[M][F]
+        Z=randint(0,1)
+        if Z==1:
+            computers_board[M][F+1]="🛬"
+            computers_board[M][F+2]="🛬"
+            computers_board[M][F+3]="🛬"
+            computers_board[M][F+4]="🛬"
+        if Z==0:
+            while True:
+                if F-1<0:
+                    F=randint(0,9)
+                if F-2<0:
+                    F=randint(0,9)
+                if F-3<0:
+                    F=randint(0,9)
+                if F-4<0:
+                    F=randint(0,9)
+                if F>5:
+                    break
+                else:
+                    computers_board[M][F-1]="🛬"
+                    computers_board[M][F-2]="🛬"
+                    computers_board[M][F-3]="🛬"
+                    computers_board[M][F-4]="🛬"
+    if Q==2:
+        while True:
+                if F-1<0:
+                    F=randint(0,9)
+                if F-2<0:
+                    F=randint(0,9)
+                if F-3<0:
+                    F=randint(0,9)
+                if F>4:
+                    break
+        F=randint(0,9)
+        computers_board[M][F]="🛬"
+        computers_board[M][F-1]="🛬"
+        computers_board[M][F+1]="🛬"
+        computers_board[M][F+2]="🛬"
+        computers_board[M][F-2]="🛬"
+if M==9:
+    D=randint(0,1)
+    if computers_board[0][0]=="🛬":
+        R=randint(0,2)
+    if R==0:
+        while True:
+                if F>5:
+                    F=randint(0,9)
+                if F>4:
+                    break
+        computers_board[M-1][F]="🛬"
+        computers_board[M-2][F]="🛬"
+        computers_board[M-3][F]="🛬"
+        computers_board[M-4][F]="🛬"
+    if R==1:
+        computers_board[M][F]
+        Z=randint(0,1)
+        if Z==1:
+            while True:
+                if F-1<0:
+                    j=randint(0,9)
+                if F-2<0:
+                    F=randint(0,9)
+                if F>4:
+                    break
+            computers_board[M][F-1]="🛬"
+            computers_board[M][F-2]="🛬"
+            computers_board[M][F-3]="🛬"
+            computers_board[M][F-4]="🛬"
+    if R==2:
+        while True:
+            if F<5:
+                F=randint(0,9)
+            if F>4:
+                break
+        computers_board[M][F-1]="🛬"
+        computers_board[M][F-2]="🛬"
+        computers_board[M][F-3]="🛬"
+        computers_board[M][F-3]="🛬"
+    if R==2:
+        while True:
+            if F<4:
+                F=randint(0,9)
+            if F>4:
+                F=randint(0,9)
+    computers_board[M][F]="🛬"
+    computers_board[M][F-1]="🛬"
+    computers_board[M][F-2]="🛬"
+    computers_board[M][F+1]="🛬"
+    computers_board[M][F+2]="🛬"
 print_the_board(computers_board)
-
-
-# for i in range(5):
-#     i=randint(0,9)
-#     h=randint(0,9)
-#     computers_board[i][h]="🛬"
-# print_the_board(computers_board)
