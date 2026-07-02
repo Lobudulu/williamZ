@@ -31,4 +31,11 @@ class Card:
             print("🃒")
         if rope=="2 of diamonds":
             print("🃂")
-        
+        if rope=="3 of spades":
+            print("🂣")
+        if rope=="3 of hearts":
+            print("🂳")
+        if rope=="3 of diamonds":
+            print("🃃")
+        if rope=="3 of spades":
+            print("🃓")
