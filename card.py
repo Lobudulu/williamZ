@@ -13,4 +13,22 @@ class Card:
             value="Ace"
         else:
             value=self.number
-        print(value,"of",self.suit)
+        rope=f"{value} of {self.suit}"
+        print(rope)
+        if rope=="Ace of spades":
+            print("🂡")
+        if rope=="Ace of hearts":
+            print("🂱")
+        if rope=="Ace of diamonds":
+            print("🃁")
+        if rope=="Ace of clubs":
+            print("🃑")
+        if rope=="2 of spades":
+            print("🂢")
+        if rope=="2 of hearts":
+            print("🂲")
+        if rope=="2 of clubs":
+            print("🃒")
+        if rope=="2 of diamonds":
+            print("🃂")
+        

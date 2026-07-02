@@ -48,3 +48,6 @@ def Create_deck():
         x=Card(i,"hearts")
         deck.append(x)
     return deck
+# o=Create_deck()
+# for card in o:
+#     card.string()
